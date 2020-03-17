@@ -105,15 +105,13 @@ document.addEventListener("DOMContentLoaded", () => {
       bq.style.display = "none"
       let oldQuote = p.innerText
       let oldAuthor = f.innerText
-      p.remove()
-      f.remove()
       let editForm = document.createElement("form")
       let editedQuote = document.createElement("input")
       let editedAuthor = document.createElement("input")
       let editedSubmit = document.createElement("input")
       editedQuote.value = oldQuote
       editedQuote.className = "form-control"
-      editedAuthor.className = "form-control"
+      editedAuthor.className = "blockquote-footer"
       editedAuthor.value = oldAuthor
       editedSubmit.className = 'btn btn-warning'
       editedSubmit.type = "submit"
@@ -131,13 +129,8 @@ document.addEventListener("DOMContentLoaded", () => {
         fetch(`http://localhost:3000/quotes/${quote.id}`, params)
           .then(resp => resp.json())
           .then(quote => {
-            p = document.createElement("p")
-            p.className = "mb-0"
             p.innerText = quote.quote
-            f = document.createElement("footer")
-            f.className = "blockquote-footer"
             f.innerText = quote.author
-            bq.prepend(p, f)
             editForm.remove()
             bq.style = ""
           })
