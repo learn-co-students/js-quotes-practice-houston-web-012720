@@ -1,11 +1,6 @@
 {
   "quotes": [
     {
-      "id": 1,
-      "quote": "The here and now is all we have, and if we play it right it's all we'll need.",
-      "author": "Ann Richards"
-    },
-    {
       "id": 2,
       "quote": "There are no secrets to success. It is the result of preparation, hard work, and learning from failure.",
       "author": "Collin Powell"
@@ -46,20 +41,227 @@
       "author": "Confucius"
     },
     {
-      "id": 10,
-      "quote": "You know, failure hurts. Any kind of failure stings. If you live in the sting, you will undoubtedly fail. My way of getting past the sting is to say no, I’m just not going to let this get me down.",
-      "author": "Sonia Sotomayor"
+      "quote": "Destroy all humans.",
+      "author": "Some Alien",
+      "id": 14
     },
     {
-      "quoteId": 2,
-      "id": 11
+      "quote": "How do you drink water like a human?",
+      "author": "Mark Zuckerberg",
+      "id": 15
+    },
+    {
+      "quote": "Interdimensional space elves!",
+      "author": "Alex Jones",
+      "id": 16
     }
   ],
   "likes": [
     {
-      "id": 1,
-      "quoteId": 1,
-      "createdAt": 1558524356
+      "quoteId": 2,
+      "id": 9
+    },
+    {
+      "quoteId": 3,
+      "id": 10
+    },
+    {
+      "quoteId": 2,
+      "id": 11
+    },
+    {
+      "quoteId": 2,
+      "id": 12
+    },
+    {
+      "quoteId": 2,
+      "id": 13
+    },
+    {
+      "quoteId": 2,
+      "id": 14
+    },
+    {
+      "quoteId": 2,
+      "id": 15
+    },
+    {
+      "quoteId": 2,
+      "id": 16
+    },
+    {
+      "quoteId": 2,
+      "id": 17
+    },
+    {
+      "quoteId": 4,
+      "id": 25
+    },
+    {
+      "quoteId": 4,
+      "id": 26
+    },
+    {
+      "quoteId": 4,
+      "id": 27
+    },
+    {
+      "quoteId": 4,
+      "id": 28
+    },
+    {
+      "quoteId": 4,
+      "id": 29
+    },
+    {
+      "quoteId": 4,
+      "id": 30
+    },
+    {
+      "quoteId": 5,
+      "id": 31
+    },
+    {
+      "quoteId": 5,
+      "id": 32
+    },
+    {
+      "quoteId": 5,
+      "id": 33
+    },
+    {
+      "quoteId": 5,
+      "id": 34
+    },
+    {
+      "quoteId": 5,
+      "id": 35
+    },
+    {
+      "quoteId": 5,
+      "id": 36
+    },
+    {
+      "quoteId": 5,
+      "id": 37
+    },
+    {
+      "quoteId": 5,
+      "id": 38
+    },
+    {
+      "quoteId": 5,
+      "id": 39
+    },
+    {
+      "quoteId": 5,
+      "id": 40
+    },
+    {
+      "quoteId": 5,
+      "id": 41
+    },
+    {
+      "quoteId": 5,
+      "id": 42
+    },
+    {
+      "quoteId": 5,
+      "id": 43
+    },
+    {
+      "quoteId": 5,
+      "id": 44
+    },
+    {
+      "quoteId": 5,
+      "id": 45
+    },
+    {
+      "quoteId": 5,
+      "id": 46
+    },
+    {
+      "quoteId": 5,
+      "id": 47
+    },
+    {
+      "quoteId": 5,
+      "id": 48
+    },
+    {
+      "quoteId": 5,
+      "id": 49
+    },
+    {
+      "quoteId": 5,
+      "id": 50
+    },
+    {
+      "quoteId": 6,
+      "id": 51
+    },
+    {
+      "quoteId": 6,
+      "id": 52
+    },
+    {
+      "quoteId": 6,
+      "id": 53
+    },
+    {
+      "quoteId": 6,
+      "id": 54
+    },
+    {
+      "quoteId": 16,
+      "createdAt": 1584459368600,
+      "id": 55
+    },
+    {
+      "quoteId": 16,
+      "createdAt": 1584459370428,
+      "id": 56
+    },
+    {
+      "quoteId": 16,
+      "createdAt": 1584459370552,
+      "id": 57
+    },
+    {
+      "quoteId": 16,
+      "createdAt": 1584459370640,
+      "id": 58
+    },
+    {
+      "quoteId": 16,
+      "createdAt": 1584459370744,
+      "id": 59
+    },
+    {
+      "quoteId": 16,
+      "createdAt": 1584459370856,
+      "id": 60
+    },
+    {
+      "quoteId": 16,
+      "createdAt": 1584459370960,
+      "id": 61
+    },
+    {
+      "quoteId": 16,
+      "createdAt": 1584459371066,
+      "id": 62
+    },
+    {
+      "quoteId": 16,
+      "createdAt": 1584459371178,
+      "id": 63
+    },
+    {
+      "quoteId": 16,
+      "createdAt": 1584459373992,
+      "id": 64
     }
   ]
 }
