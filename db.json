@@ -3,17 +3,12 @@
     {
       "id": 1,
       "quote": "The here and now is all we have, and if we play it right it's all we'll need.",
-      "author": "Ann Richards"
+      "author": "Jason"
     },
     {
       "id": 2,
       "quote": "There are no secrets to success. It is the result of preparation, hard work, and learning from failure.",
-      "author": "Collin Powell"
-    },
-    {
-      "id": 3,
-      "quote": "Don't count the days, make the days count.",
-      "author": "Mike Tyson"
+      "author": "Collin"
     },
     {
       "id": 4,
@@ -48,11 +43,7 @@
     {
       "id": 10,
       "quote": "You know, failure hurts. Any kind of failure stings. If you live in the sting, you will undoubtedly fail. My way of getting past the sting is to say no, I’m just not going to let this get me down.",
-      "author": "Sonia Sotomayor"
-    },
-    {
-      "quoteId": 2,
-      "id": 11
+      "author": "Sonia2"
     }
   ],
   "likes": [
@@ -60,6 +51,141 @@
       "id": 1,
       "quoteId": 1,
       "createdAt": 1558524356
+    },
+    {
+      "quoteId": 1,
+      "createdAt": 1584457775890,
+      "id": 2
+    },
+    {
+      "quoteId": 1,
+      "createdAt": 1584457776075,
+      "id": 3
+    },
+    {
+      "quoteId": 1,
+      "createdAt": 1584457776238,
+      "id": 4
+    },
+    {
+      "quoteId": 2,
+      "createdAt": 1584458239409,
+      "id": 5
+    },
+    {
+      "quoteId": 2,
+      "createdAt": 1584458239622,
+      "id": 6
+    },
+    {
+      "quoteId": 2,
+      "createdAt": 1584458239798,
+      "id": 7
+    },
+    {
+      "quoteId": 2,
+      "createdAt": 1584458239983,
+      "id": 8
+    },
+    {
+      "quoteId": 1,
+      "createdAt": 1584458258527,
+      "id": 9
+    },
+    {
+      "quoteId": 1,
+      "createdAt": 1584458259027,
+      "id": 10
+    },
+    {
+      "quoteId": 1,
+      "createdAt": 1584458259324,
+      "id": 11
+    },
+    {
+      "quoteId": 1,
+      "createdAt": 1584458259504,
+      "id": 12
+    },
+    {
+      "quoteId": 1,
+      "createdAt": 1584458259721,
+      "id": 13
+    },
+    {
+      "quoteId": 2,
+      "createdAt": 1584458260676,
+      "id": 14
+    },
+    {
+      "quoteId": 2,
+      "createdAt": 1584458261104,
+      "id": 15
+    },
+    {
+      "quoteId": 2,
+      "createdAt": 1584458261289,
+      "id": 16
+    },
+    {
+      "quoteId": 2,
+      "createdAt": 1584458261492,
+      "id": 17
+    },
+    {
+      "quoteId": 10,
+      "createdAt": 1584458269768,
+      "id": 23
+    },
+    {
+      "quoteId": 10,
+      "createdAt": 1584458269955,
+      "id": 24
+    },
+    {
+      "quoteId": 10,
+      "createdAt": 1584458270119,
+      "id": 25
+    },
+    {
+      "quoteId": 10,
+      "createdAt": 1584458270269,
+      "id": 26
+    },
+    {
+      "quoteId": 10,
+      "createdAt": 1584458270441,
+      "id": 27
+    },
+    {
+      "quoteId": 9,
+      "createdAt": 1584458271378,
+      "id": 28
+    },
+    {
+      "quoteId": 9,
+      "createdAt": 1584458271562,
+      "id": 29
+    },
+    {
+      "quoteId": 9,
+      "createdAt": 1584458271732,
+      "id": 30
+    },
+    {
+      "quoteId": 9,
+      "createdAt": 1584458271921,
+      "id": 31
+    },
+    {
+      "quoteId": 9,
+      "createdAt": 1584458272112,
+      "id": 32
+    },
+    {
+      "quoteId": 9,
+      "createdAt": 1584458272306,
+      "id": 33
     }
   ]
 }
