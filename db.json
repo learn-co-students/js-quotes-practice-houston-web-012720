@@ -53,7 +53,6 @@
     {
       "quote": "boo",
       "author": "Anam",
-      "likes": [],
       "id": 11
     }
   ],
@@ -65,12 +64,10 @@
     },
     {
       "quoteId": 1,
-      "createdAt": "SOMENUMBERS",
       "id": 2
     },
     {
       "quoteId": 1,
-      "createdAt": "SOMENUMBERS",
       "id": 3
     },
     {
@@ -120,6 +117,18 @@
     {
       "quoteId": 1,
       "id": 15
+    },
+    {
+      "quoteId": 1,
+      "id": 16
+    },
+    {
+      "quoteId": 1,
+      "id": 17
+    },
+    {
+      "quoteId": 11,
+      "id": 18
     }
   ]
 }

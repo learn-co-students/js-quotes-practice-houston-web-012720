@@ -4,15 +4,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const LIKES_URL = "http://localhost:3000/likes"
   const QUOTES_URL = "http://localhost:3000/quotes" 
   const form = document.querySelector("#new-quote-form")
-  const quoteField = document.querySelector("#new-quote").value
-  const authorField = document.querySelector("#author").value
-
-
+  const sortBtn = document.querySelector("#sort")
+  const list = document.querySelector("#quote-list")
+  let quotesArray
 
   // GET ALL THE QUOTES AND LIKES
-  fetch(QUOTES_W_LIKES_URL)
-  .then(resp => resp.json())
-  .then(quotesData =>  showQuotes(quotesData))
+  function getQuotes(){
+    fetch(QUOTES_W_LIKES_URL)
+    .then(resp => resp.json())
+    .then(quotesData =>  {
+    showQuotes(quotesData)
+    quotesArray = quotesData
+  })
+  }
+  getQuotes()
 
   function showQuotes(quotes){
     quotes.forEach(quote => showQuote(quote))
@@ -20,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // SHOW EACH QUOTE BUILD IN ITS LIKE, EDIT, AND DELETE FUNCTIONALITY
   function showQuote(quote){
-    const list = document.querySelector("#quote-list")
     const li = document.createElement("li")
     li.className = "blockquote"
       const blockquote = document.createElement("blockquote")
@@ -34,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const br = document.createElement("br")
         const likeBtn = document.createElement("button")
         likeBtn.innerText = "Likes:"
+        likeBtn.className = "btn-success"
           const span = document.createElement("span")
           span.innerText = quote.likes.length
           // LIKE FUNCITONALITY 
@@ -60,6 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
         likeBtn.append(span)
         const dltBtn = document.createElement("button")
         dltBtn.innerText = "Delete"
+        dltBtn.className = "btn-danger"
         // DELETE FUNCTIONALITY
         dltBtn.addEventListener("click", ()=>{
           fetch(QUOTES_URL + "/"  + quote.id, {
@@ -125,7 +131,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // CREATE A NEW QUOTE
   form.addEventListener("submit", () => {
     event.preventDefault()
-    
+    const quoteField = document.querySelector("#new-quote").value
+    const authorField = document.querySelector("#author").value
     fetch(QUOTES_URL, {
       method: "POST",
       headers: {
@@ -134,16 +141,52 @@ document.addEventListener("DOMContentLoaded", () => {
       body: JSON.stringify({
         quote: quoteField,
         author: authorField,
-        likes: []
+        // likes: [] likes is not an attribue of quote. it is a relationship 
       })
     })
     .then(resp => resp.json())
     .then(newQuote => {
+      newQuote.likes = []
       showQuote(newQuote)
       form.reset()
     })
   })
 
-})
 
-// ADD A SORT FEATURE TO SORT BY AUTHOR ALPHABETICALLY  
+  // sort by doing another fetch 
+  // sortBtn.addEventListener("click", () => {
+  //   if (sortBtn.innerText === "Sort by Author"){
+  //     fetch("http://localhost:3000/quotes?_embed=likes&_sort=author")
+  //     // http://localhost:3000/quotes?_embed=likes to get likes with quotes
+  //     .then(resp => resp.json())
+  //     .then(sortedQuotes => {
+  //       console.log(sortedQuotes)
+  //       list.innerHTML = ""
+  //       showQuotes(sortedQuotes)
+  //     })
+  //     sortBtn.innerText = "Sort by Created"
+  //   } else {
+  //     list.innerHTML = ""
+  //     getQuotes()
+  //     sortBtn.innerText = "Sort by Author"
+  //   }
+  // })
+
+  // sort by using JS in browser
+  sortBtn.addEventListener("click", () => {
+    const sortedQuotes = quotesArray.slice().sort((a,b) => {
+      return a.author.toLowerCase() === b.author.toLowerCase() ? 0 : a.author.toLowerCase() < b.author.toLowerCase() ? -1 : 1
+    })
+    if (sortBtn.innerText === "Sort by Author"){
+      list.innerHTML = ""
+      showQuotes(sortedQuotes)
+      sortBtn.innerText = "Sort by Created"
+    } else if (sortBtn.innerText === "Sort by Created") {
+      list.innerHTML = ""
+      showQuotes(quotesArray)
+      sortBtn.innerText = "Sort by Author"
+    }
+  })
+
+
+})
