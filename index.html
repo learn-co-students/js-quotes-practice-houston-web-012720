@@ -10,12 +10,6 @@
   <title>Motivation</title>
 </head>
 <body class='container center'>
-  <h1>My favorite quotes:</h1>
-  <div>
-    <ul id="quote-list">
-    </ul>
-  </div>
-  <hr>
   <div>
     <form id="new-quote-form">
       <div class="form-group">
@@ -29,6 +23,30 @@
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
   </div>
+  <h1>My favorite quotes:</h1>
+  <div>
+    <div>
+      <h4>Filter</h4>
+      <label>Auther name</label>
+      <select id="filter-select">
+      </select>
+      <br>
+      <label>Top </label>
+      <select id="filter-like-select">
+        <option value="0"></option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select>
+      <label> Has Most Likes</label>
+      <br>
+      <button id="filter-btn" class="btn btn-primary">Submit</button>
+    </div>
+    <ul id="quote-list">
+    </ul>
+  </div>
+  <hr>
   <script src="src/index.js"></script>
 </body>
 </html>
